@@ -3,7 +3,7 @@
 #Variables
 hours = 2
 number_of_seconds = 3600
-seconds = hours * number_of_seconds
+seconds = hours * 3600
 
 #Printing result
-print(hours, "hour(s) is" ,seconds, "seconds")
+print(hours, "hour(s) is" ,seconds, "seconds.")
