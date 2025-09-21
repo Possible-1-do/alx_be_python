@@ -1,9 +1,11 @@
 
 
+# control-flow/daily_reminder.py
+
 # Prompt for a single task
-task = input("Enter the task description: ")
-priority = input("Enter the task's priority (high, medium, low): ").lower()
-time_bound = input("Is the task time-bound? (yes or no): ").lower()
+task = input("Enter your task: ")
+time_bound = input("Is it time-bound? (yes/no): ").lower()
+priority = input("Priority (high/medium/low): ").lower()
 
 # Process with match-case
 match priority:
@@ -22,3 +24,4 @@ if time_bound == "yes":
 
 # Final output
 print(reminder)
+
