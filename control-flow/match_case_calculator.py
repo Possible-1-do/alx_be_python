@@ -1,7 +1,7 @@
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
 
-print("Chose an operation!(+,-,*,/)")
+print("Choose the operation(+,-,*,/):")
 print("1.Addition")
 print("2.Subtraction")
 print("3.Multiplication")
