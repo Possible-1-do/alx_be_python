@@ -7,9 +7,9 @@ print("2.Subtraction")
 print("3.Multiplication")
 print("4.Division")
 
-choice = int(input("Enter your choice:"))
+operation = int(input("Enter your choice:"))
 
-match choice:
+match operation:
     case 1:
         print("The result is",num1 + num2)
     case 2:
