@@ -1,21 +1,25 @@
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
 
 operation = input("Choose the operation(+,-,*,/):")
 
 
 match operation:
     case "+":
-        print("The result is",num1 + num2)
+        result = num1 + num2
+        print(f"The result is {result}")
     case "-":
-        print("The result is",num1 - num2)
+        result = num1 - num2
+        print(f"The result is {result}")
     case "*":
-        print("The result is",num1 * num2)
+        result = num1 * num2
+        print(f"The result is {result}")
     case "/":
-        if num2 != 0:
-            print("The result is",num1 / num2)
-        else:
+        if num2 == 0:
             print("Cannot divide by zero")
+        else:
+            result = num1 / num2
+            print(f"The result is {result}")
     case _:
-        print("You entered a wrong choice")
+        print("You entered a wrong operation")
          
