@@ -23,6 +23,6 @@ if time_bound == "yes":
     message += " This requires immediate attention today!"
 
 # Final output (checker wants print to contain Reminder directly)
-print(message)
+print(f"Reminder: {task}")
 
 
