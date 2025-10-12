@@ -1,14 +1,14 @@
 class BankAccount:
     def __init__(self, initial_balance=0):
-        # This attribute is encapsulated 
+        """Initialize a bank account with an optional starting balance."""
         self.account_balance = initial_balance
 
     def deposit(self, amount):
-        """Add money to the account"""
+        """Deposit a certain amount into the account."""
         self.account_balance += amount
 
     def withdraw(self, amount):
-        """Withdraw money if funds are enough"""
+        """Withdraw a certain amount if funds are sufficient."""
         if amount <= self.account_balance:
             self.account_balance -= amount
             return True
@@ -16,6 +16,7 @@ class BankAccount:
             return False
 
     def display_balance(self):
-    """Show the current account balance"""
-    print(f"Current Balance: ${self.account_balance:.2f}")
+        """Display the current balance formatted to two decimal places."""
+        print(f"Current Balance: ${self.account_balance:.2f}")
+
 
